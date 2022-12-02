@@ -1,0 +1,154 @@
+/*
+
+    Global
+
+*/
+body{
+    font-family: sans-serif;
+    margin-bottom: 700px;
+}
+
+/*
+
+    Navigation Bar
+
+*/
+
+/* header "container" */
+div.head-bar{
+    background-color: rgb(149, 179, 166);
+    position: fixed;
+
+    font-weight: bold;
+
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+ /* title */
+h1{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+/* general list of nav elements */
+nav.top-nav ul{
+    list-style: none;
+    font-size: 0px;
+    margin-bottom: 15px;
+}
+
+/* format nav bar horizontally + text style */
+nav.top-nav li{
+    display: inline-block;
+    margin: 5px;
+    user-select: none;
+    font-size: 22px;
+}
+
+/* highlight current page */
+nav [aria-current=page]{
+    background-color: rgba(191, 239, 225, 0.728);
+    color: #000;
+}
+
+/* underline nav links when hovered over */
+nav.top-nav li:hover{
+    text-decoration: underline;
+}
+
+/* nav links are always black (aesthetic preference) */
+a:link, a:visited, a:active{
+    color: black;
+}
+
+/*
+
+    Home
+
+*/
+.project-header{
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.project-header p{
+    margin-top: -15px;
+}
+
+.project-wrapper {
+	width: 45%;
+    float: left;
+    margin-left: 40px;
+
+	margin-bottom: 25;
+}
+
+.project-image {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.learn-more {
+    background-color: rgb(149, 179, 166);
+    cursor: pointer;
+    padding: 18px;
+    width: 550px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(191, 239, 225, 0.728);
+    width: 515px;
+
+    margin-bottom: 50px;
+}
+
+/* 
+
+    Bio
+
+*/
+.headshot-image, .basic-info, .description {
+    float: left;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+
+/*
+
+    Contact
+
+*/
+.contact-info {
+    float: left;
+    margin-top: 140px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.label{
+    background-color: rgb(149, 179, 166);
+}
+
+.info{
+    margin-left: 40px;
+}
