@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Meena Zoks: Personal Portfolio</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="portfolio.css"/>  
+   </head>
+
+    <body>
+        <!-- Header, including navigation bar -->
+        <div class="head-bar" aria-labelledby="head navigation bar">    
+            <h1>Meena Zoks: Personal Portfolio</h1>
+
+                <nav role=navigation class="top-nav">
+                    <ul>
+                        <a href="home.html">
+                            <li nav aria-current=page tabindex=0>Home</li>
+                        </a>
+                        
+                        <a href="bio.html">
+                            <li tabindex=1>Bio</li>
+                        </a>
+
+                        <a href="contact.html">
+                            <li tabindex=2>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+        </div>
+
+        <div id="main" aria-labelledby="main project content">
+
+            <!-- Short title/description of this page -->
+            <div class = "project-header">
+                <h2>Projects</h2>
+
+                <p>Below are two projects I created in computer science classes.</p>
+                <p>Click on the buttons underneath each image to learn more.</p>
+            </div>
+
+            <!-- Each project wrapper contains the title of the project,
+            a picture of the project, and a longer description -->
+
+            <!-- Project 1 -->
+            <div class="project-wrapper" title="Brick Out">
+
+                <!-- Title -->
+                <div class="project-name">
+                    <h3>Brick Out</h3>
+                </div>
+
+                <!-- Image -->
+                <div class="project-image">
+                    <img src="images/brickout1.png" alt="brickout cover image" width="550" height="500">
+                </div>
+
+                <!-- Collapsable long description -->
+                <button type="button" class="learn-more">Click here to learn more about Brick Out</button>
+
+                <div class="content">
+                    <p>
+                        Description: Brick Out is a game consisting of a ball, a paddle, and blocks.
+                        The ball bounces off the paddle and destroys any blocks it hits. The goal of
+                        the game is to destroy all blocks. The paddle is controlled by the trackpad,
+                        and if the user misses the ball, the paddle and ball are reset.
+                    </p>
+
+                    <p>Class: Computer Science 211 -- Fundamentals of Computer Progamming II</p>
+
+                    <p>Language: C++</p>
+
+                    <p>Below is a picture showing an example state of the game after some blocks have been destroyed:</p>
+                    <img src="images/brickout2.png" alt="brickout mid game" width="350" height="300">
+
+                    <p>Click here to download the source code: 
+                        <a href="brickout code.zip" target="_blank" rel="noopener noreferrer">
+                            Brickout Code
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-wrapper" title="Garden">
+
+                <!-- Title -->
+                <div class="project-name">
+                    <h3>Garden</h3>
+                </div>
+
+                <!-- Image -->
+                <div class="project-image">  
+                    <img src="images/garden1.png" alt="garden cover image" width="550" height="500">
+                </div>
+
+                <!-- Collapsable long description -->
+                <button type="button" class="learn-more">Click here to learn more about Garden</button>
+
+                <div class="content">
+                    <p>Description: Garden runs a simulation to represent the state of a garden everyday.
+                        <ul>
+                            <li>If a flower has only one or no neighbors, it dies of loneliness.</li>
+                            <li>If a flower has four neighbors, it dies of overcrowding.</li>
+                            <li>Empty locations that have exactly three neighbors will grow a flower.</li>
+                        </ul>
+                        Any cell that undergoes a change during the current step will have a red border.
+                    </p>
+
+                    <p>Class: Computer Progamming III (high school)</p>
+
+                    <p>Language: Java (focus on GUI)</p>
+
+                    <p>Below are pictures showing two steps after the starting state: </p>
+                    
+                    <p>Step 1:</p>
+                    <img src="images/garden2.png" alt="garden step 1" width="350" height="300">
+                    <p>Step 2:</p>
+                    <img src="images/garden3.png" alt="garden step 2" width="350" height="300">
+
+                    <p>Click here to download the source code: 
+                        <a href="Zoks_GardenGUI.java" target="_blank" rel="noopener noreferrer">
+                            Garden Code
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- After all html elements have loaded -->
+            <script src="portfolio.js" type="text/javascript"></script>
+        </div>
+   
+    </body>
+</html>
